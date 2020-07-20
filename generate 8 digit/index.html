@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+<script>
+
+let ranNum =(limit) =>{
+   let num= 0;
+   let number= 0;
+   
+   if(limit == 0){
+         return 0
+     }
+    else{
+      number = Math.floor(Math.random()*10);
+
+      num = (Math.pow(10,limit-1)* number) + ranNum(limit-1)
+
+
+       return num
+       }
+}
+
+console.log(ranNum(8))
+</script>
+</body>
+</html>
